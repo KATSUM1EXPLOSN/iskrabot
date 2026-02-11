@@ -11,7 +11,7 @@ load_dotenv()
 @dataclass
 class BotConfig:
     """Настройки бота"""
-    token: str
+    token: 8321486251:AAHCvV_tY6m3yWNj7qttGTOEZrDJDIB6xs8
     admin_ids: list[int]
     
     # Лимиты просмотров
@@ -41,3 +41,4 @@ def load_config() -> tuple[BotConfig, DatabaseConfig]:
     )
     db_config = DatabaseConfig()
     return bot_config, db_config
+
