@@ -10,8 +10,8 @@ from aiogram.types import (
     ContentType
 )
 
-from database import Database
-from keyboards import keyboards as kb
+from database.models import Database
+import keyboards.keyboards as kb
 from config import BotConfig
 
 
