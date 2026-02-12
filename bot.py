@@ -16,8 +16,10 @@ from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 
 from config import load_config
-from database import Database
-from handlers import profile_router, matching_router, payments_router
+from database.models import Database
+from handlers.profile import router as profile_router
+from handlers.matching import router as matching_router
+from handlers.payments import router as payments_router
 
 
 # Настройка логирования
