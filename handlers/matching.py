@@ -6,8 +6,8 @@ from aiogram import Router, F, Bot
 from aiogram.types import Message, CallbackQuery, InputMediaPhoto, InputMediaVideo
 from aiogram.fsm.context import FSMContext
 
-from database import Database
-from keyboards import keyboards as kb
+from database.models import Database
+import keyboards.keyboards as kb
 from config import BotConfig
 
 
