@@ -7,6 +7,9 @@ import logging
 import sys
 from pathlib import Path
 
+# Добавляем текущую директорию в путь поиска модулей
+sys.path.insert(0, str(Path(__file__).parent))
+
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
